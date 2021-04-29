@@ -50,22 +50,9 @@ public class BookController {
         //回显
         List<Type> types = bookService.getAllType();
         model.addAttribute("types",types);
-        System.out.println("osdjfskf:,");
-        System.out.println("osdjfskf:,");
-        System.out.println("osdjfskf:,");
-        System.out.println("osdjfskf:,");
-        System.out.println("lsdkfjslfdjlksdfkkfkdjf");
-        System.out.println("lsdkfjslfdjlksdfkkfkdjf");
-        System.out.println("lsdkfjslfdjlksdfkkfkdjf");
-        System.out.println("lsdkfjslfdjlksdfkkfkdjf");
-        System.out.println("lsdkfjslfdjlksdfkkfkdjf");
+
         return "showBookInfo";
     }
 
-    @RequestMapping("/updBook")
-    public String updBook(@RequestParam("book_id")Integer book_id){
-        //借阅书籍
-        Integer row = bookService.borrow(book_id);
-        return "redirect:/book/getAllByCondition";
-    }
+
 }
