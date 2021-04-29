@@ -18,7 +18,6 @@ import java.util.List;
  * @author YaChow
  * @create 2021-03-08-9:02
  */
-@Controller
 @RequestMapping("/book")
 public class BookController {
     @Autowired
