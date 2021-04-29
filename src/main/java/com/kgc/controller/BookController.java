@@ -51,7 +51,7 @@ public class BookController {
         //回显
         List<Type> types = bookService.getAllType();
         model.addAttribute("types",types);
-
+        System.out.println("osdjfskf:,");
         return "showBookInfo";
     }
 
