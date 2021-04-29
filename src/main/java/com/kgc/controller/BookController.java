@@ -52,6 +52,9 @@ public class BookController {
         List<Type> types = bookService.getAllType();
         model.addAttribute("types",types);
         System.out.println("osdjfskf:,");
+        System.out.println("osdjfskf:,");
+        System.out.println("osdjfskf:,");
+        System.out.println("osdjfskf:,");
         return "showBookInfo";
     }
 
